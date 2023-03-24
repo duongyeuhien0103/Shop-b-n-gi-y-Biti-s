@@ -1,0 +1,231 @@
+html {
+    width: 100%;
+}
+#header {
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 7rem;
+    margin-bottom: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: block;
+}
+#header img {
+    position: absolute;
+    left: 20rem;
+    height: 100px;
+    width: 250px; 
+}
+#header h2 {
+    display: inline-block;
+    position: relative;
+    padding: 0px 30px;
+    left: 60rem;
+    top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#header i {
+    position: relative;
+    left: 70rem;
+    top: 1.5rem;
+    font-size: 35px;
+    cursor: pointer;
+}
+/* Khi chọn hàng  */
+.listStore {
+    position: absolute;
+    display: grid;
+    grid-gap: 20px;
+    width: 79em;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    position: relative;
+    left: 20rem;
+}
+.listStore div {
+    width: 300px;
+    height: 385px;
+    background-color: rgb(228, 222, 222);
+    position: relative;
+    display: block;
+    box-shadow: 0px 0px 4px 4px #e0dddd;
+    text-align: center;
+}
+.listStore h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    top: 0%;
+    display: block;
+    height: 44px;
+}
+.listStore p{
+    color: rgb(131, 125, 125);
+    display: inline-block;
+    position: relative;
+    margin-left: 16%;
+    margin-right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fa-cart-plus {
+    color: rgb(160, 156, 156);
+    font-size: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 3em;
+    cursor: pointer;
+}
+.fa-shopping-cart {
+    color: rgb(160, 156, 156);
+    font-size: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 3em;
+    cursor: pointer;
+}
+ /* Khi click vào giỏ hàng  */
+#cart-product {
+    width: 90rem;
+    display: none;
+}
+#option-cart {
+    height: 4rem;
+    font: 15px arial;
+    display: none;
+    position: relative;
+    left: 10rem;
+    border-bottom: 3px solid rgb(212, 204, 204);
+}
+.name-product {
+    margin: 0;
+    padding-top: 1rem;
+}
+.option {
+    display: inline-block;
+    margin-left: 8rem;
+}
+.option:first-child {
+    margin-right: 200px;
+    margin-left: 100px;
+}
+#info-cart {
+    display: block;
+    position: relative;
+    left: 10rem;
+    height: 10rem;
+    margin-top: 20px;
+}
+#info-cart p {
+    display: inline-block;
+}
+.info h2 {
+    color: black;
+    position: absolute;
+    display: block;
+    left: 14rem;
+    top: 0rem;
+    font: 20px arial;
+    font-weight: bold;
+    width: 200px;
+
+}
+.info h2~p {
+    color: black;
+    position: absolute;
+    display: inline-block;
+    left: 14rem;
+    top: 6rem;
+    font: 15px arial;
+    font-weight: bold;
+}
+.option-quantity {
+    display: block;
+}
+.option-quantity p {
+    position: relative;
+    display: inline-block;
+    left: 37rem;
+    font: 20px arial;
+    top: -10rem;
+    margin-right: 20px;
+    color: black;
+}
+.total {
+    position: relative;
+    font: 20px arial;
+
+    left: 53rem;
+    top: -14rem;
+    margin-right: 10rem;
+}
+.fa-times-circle {
+    position: absolute;
+    right: 10rem;
+    top: 2.5rem;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+}
+.pay-product {
+    height: 10rem;
+    /* background-color: aquamarine; */
+    position: relative;
+    left: 10rem;
+    font-size: 20px;
+    display: block;
+    border-bottom: 1px solid rgb(182, 176, 176);
+    
+}
+.back-shop {
+
+    position: relative;
+    display: none;
+    width: 12rem;
+    border: 3px solid red;
+    border-radius: 5px;
+    left: 10rem;
+
+}
+.back-shop i {
+    color: red;
+    position: relative;
+    left: 0.5rem;
+    font-size: 16px;
+    margin-right: 5px ;
+}
+.back-shop input {
+    font-size: 20px;
+    border: none;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+.pay-product p {
+    position: absolute;
+    right: 5rem;
+    font: 20px arial;
+}
+.pay input {
+    font-size: 25px;
+    position: absolute;
+    right: 8rem;
+    top: 7rem;
+    background-color: rgb(12, 160, 12);
+    color: white;
+    cursor: pointer;
+}
+.reduce {
+    cursor: pointer;
+}
+.increase {
+    cursor: pointer;
+}
+.empty {
+    position: relative;
+    width: 45rem;
+    left: 37rem;
+    display: none;
+}
